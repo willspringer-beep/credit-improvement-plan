@@ -78,6 +78,9 @@
       flex-direction: column;
       align-items: center;
       gap: 24px;
+      transform: scale(0.75);
+      transform-origin: top center;
+      margin-bottom: -240px; /* collapse the empty space the scale leaves behind */
     }
     .phone-col-title {
       font-family: 'National 2', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -617,7 +620,7 @@
 <body>
 
   <div class="page-title">
-    <div>Credit Improvement Plan Pressure testing real outputs</div>
+    <div>Credit Improvement Plan<br>Pressure testing real outputs</div>
     <div style="font-size:24px; font-weight:400; line-height:140%; margin-top:16px; color:#D9DFE2; max-width:1000px; margin-left:auto; margin-right:auto;">Plan outputs generated from different member credit profiles, rendered in the CIP design structure.</div>
   </div>
 
@@ -690,8 +693,8 @@
 
   <div style="font-family: 'National 2', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 24px; font-weight: 700; line-height: 115%; letter-spacing: 0%; color: #1a1a1a; margin: 16px 0 16px;">Recommendations</div>
 
-  <!-- All recommendations in one card -->
-  <div class="card" style="background:#ffffff; border: 1px solid #008600; box-shadow: none; border-radius: 12px; margin-top: 0;">
+  <!-- Recommendation 1: standalone card -->
+  <div class="card" style="background:#ffffff; border: 1px solid #008600; box-shadow: none; border-radius: 12px; margin-top: 0; margin-bottom: 16px;">
 
     <!-- Section 1: Reduce balances -->
     <div class="sec-header">
@@ -702,7 +705,7 @@
     </div>
 
     <div class="sec-body">
-      Credit utilization — how much of your available credit you're using — is a big piece of your score. You're at about 17% overall, but one card is at 156% and another at 57%, which signals to lenders that those lines are stretched thin.
+      Credit utilization — how much of your available credit you're using — is a big piece of your score. <strong>You're at about 17% overall, but one card is at 156% and another at 57%,</strong> which signals to lenders that those lines are stretched thin.
     </div>
 
     <div style="display:flex; align-items:stretch; margin:14px 0; font-family: 'National 2', -apple-system, BlinkMacSystemFont, sans-serif;">
@@ -720,20 +723,14 @@
     <!-- Card detail: SEARS / CBNA -->
     <div style="margin-top:24px; margin-bottom:16px; font-family:'National 2', -apple-system, BlinkMacSystemFont, sans-serif;">
       <div style="display:flex; align-items:center; gap:10px; margin-bottom:4px;">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;">
           <path d="M1.2 6.0001H0V20.4001H21.6V19.2001H1.2V6.0001Z" fill="black"/>
           <path d="M24 3.6001H2.4V7.2001H24V3.6001Z" fill="black"/>
           <path d="M2.4 18.0001H24V9.6001H2.4V18.0001ZM18 13.2001H21.6V14.4001H18V13.2001ZM4.8 13.2001H12V14.4001H4.8V13.2001Z" fill="black"/>
         </svg>
         <div style="font-size:17px; font-weight:500; line-height:115%; letter-spacing:0%; color:#000;">SEARS / CBNA</div>
       </div>
-      <div style="font-size:15px; font-weight:400; line-height:115%; color:#6b7680; margin-bottom:12px; margin-left:46px;">APR: 25.24%</div>
-      <div style="display:flex; justify-content:space-between; align-items:center; padding:12px 12px; background:#E9EEF0; font-size:15px; color:#000;">
-        <span>Last reported utilization</span><span>156%</span>
-      </div>
-      <div style="display:flex; justify-content:space-between; align-items:center; padding:12px 12px; background:#fff; font-size:15px; color:#000;">
-        <span>Target utilization</span><span>30%</span>
-      </div>
+      <div style="font-size:15px; font-weight:400; line-height:140%; color:#000; margin: 4px 0 16px 30px;">Utilization: 156% → 30%</div>
       <div style="display:flex; justify-content:space-between; align-items:center; padding:12px 12px; background:#E9EEF0; font-size:15px; color:#000;">
         <span>Last reported balance</span><span>$391</span>
       </div>
@@ -753,20 +750,14 @@
     <!-- Card detail: DSNB MACYS -->
     <div style="margin-bottom:8px; font-family:'National 2', -apple-system, BlinkMacSystemFont, sans-serif;">
       <div style="display:flex; align-items:center; gap:10px; margin-bottom:4px;">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;">
           <path d="M1.2 6.0001H0V20.4001H21.6V19.2001H1.2V6.0001Z" fill="black"/>
           <path d="M24 3.6001H2.4V7.2001H24V3.6001Z" fill="black"/>
           <path d="M2.4 18.0001H24V9.6001H2.4V18.0001ZM18 13.2001H21.6V14.4001H18V13.2001ZM4.8 13.2001H12V14.4001H4.8V13.2001Z" fill="black"/>
         </svg>
         <div style="font-size:17px; font-weight:500; line-height:115%; letter-spacing:0%; color:#000;">DSNB Macy's</div>
       </div>
-      <div style="font-size:15px; font-weight:400; line-height:115%; color:#6b7680; margin-bottom:12px; margin-left:46px;">APR: 30.49%</div>
-      <div style="display:flex; justify-content:space-between; align-items:center; padding:12px 12px; background:#E9EEF0; font-size:15px; color:#000;">
-        <span>Last reported utilization</span><span>57%</span>
-      </div>
-      <div style="display:flex; justify-content:space-between; align-items:center; padding:12px 12px; background:#fff; font-size:15px; color:#000;">
-        <span>Target utilization</span><span>30%</span>
-      </div>
+      <div style="font-size:15px; font-weight:400; line-height:140%; color:#000; margin: 4px 0 16px 30px;">Utilization: 57% → 30%</div>
       <div style="display:flex; justify-content:space-between; align-items:center; padding:12px 12px; background:#E9EEF0; font-size:15px; color:#000;">
         <span>Last reported balance</span><span>$57</span>
       </div>
@@ -791,7 +782,10 @@
       <div class="action-item"><div class="action-dot"></div>Aim to keep every card near or below 10–20% utilization. Paying before the statement close date ensures the lower balance reports.</div>
     </div>
 
-    <div class="sec-divider"></div>
+  </div><!-- /Recommendation 1 card -->
+
+  <!-- Recommendations 2-5: original card -->
+  <div class="card" style="background:#ffffff; border: 1px solid #008600; box-shadow: none; border-radius: 12px; margin-top: 0;">
 
     <!-- Section 2: Keep accounts current -->
     <div class="sec-header">
@@ -849,7 +843,9 @@
       <div class="action-item"><div class="action-dot"></div>Make sure at least the minimum payment posts before the due date every month.</div>
     </div>
 
-    <div class="sec-divider"></div>
+  </div><!-- /Recommendation 2 card -->
+
+  <div class="card" style="background:#ffffff; border: 1px solid #008600; box-shadow: none; border-radius: 12px; margin-top: 0; margin-bottom: 16px;">
 
     <!-- Section 3: Build positive activity -->
     <div class="sec-header">
@@ -882,7 +878,9 @@
       <div class="action-item"><div class="action-dot"></div>No credit check, no fee.</div>
     </div>
 
-    <div class="sec-divider"></div>
+  </div><!-- /Recommendation 3 card -->
+
+  <div class="card" style="background:#ffffff; border: 1px solid #008600; box-shadow: none; border-radius: 12px; margin-top: 0; margin-bottom: 16px;">
 
     <!-- Section 4: Older accounts -->
     <div class="sec-header">
@@ -916,7 +914,9 @@
       <div class="action-item"><div class="action-dot"></div>Avoid closing any long-held accounts unless they have high fees you can't justify.</div>
     </div>
 
-    <div class="sec-divider"></div>
+  </div><!-- /Recommendation 4 card -->
+
+  <div class="card" style="background:#ffffff; border: 1px solid #008600; box-shadow: none; border-radius: 12px; margin-top: 0; margin-bottom: 16px;">
 
     <!-- Section 5: Stay credit-healthy -->
     <div class="sec-header">
@@ -936,7 +936,9 @@
       <div class="action-item"><div class="action-dot"></div>Continue keeping balances paid down and payments on time — these habits lock in long-term credit strength.</div>
     </div>
 
-    <div class="sec-divider"></div>
+  </div><!-- /Recommendation 5 card -->
+
+  <div class="card" style="background:#ffffff; border: 1px solid #008600; box-shadow: none; border-radius: 12px; margin-top: 0;">
 
     <!-- Summary: You're already doing great -->
     <div class="sec-header">
